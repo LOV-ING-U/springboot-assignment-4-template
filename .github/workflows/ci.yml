@@ -1,0 +1,5 @@
+# TODO
+name: Spring seminar CI
+on:
+
+jobs:
