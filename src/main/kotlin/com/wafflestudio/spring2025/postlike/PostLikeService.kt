@@ -27,7 +27,7 @@ class PostLikeService(
         val newLike = PostLike(userId = user.id!!, postId = postId)
         postLikeRepository.save(newLike)
         post.likeCount++;
-        postRepository.save(post)
+        postRepository.save(post) // meaningless comment for test
     }
 
     @Transactional
