@@ -60,6 +60,7 @@ class UserService(
         user: User,
         token: String
     ) {
-        TODO()
+        val key = "blacklist:$token"
+        redisTemplate.opsForValue().set(key, "logout")
     }
 }
