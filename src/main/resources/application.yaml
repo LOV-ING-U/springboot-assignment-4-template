@@ -7,7 +7,7 @@ spring:
   flyway:
     enabled: true
   redis:
-    host: 43.203.158.94
+    host: my-redis-master.default.svc.cluster.local
     port: 6379
 
 jwt:
